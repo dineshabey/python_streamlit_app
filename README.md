@@ -128,23 +128,32 @@ Start the server
 
 Note: Do the port mapping to this port:- 8501
 
-# Update the system
+Update the system
+```
 sudo yum update
-
-# Install necessary tools and libraries
+```
+Install necessary tools and libraries
+```
 sudo yum install git curl unzip tar make vim wget -y
-
-# Install Python 3 package manager
+```
+Install Python 3 package manager
+```
 sudo yum install python3-pip -y
-
-# Clone the repository
+```
+Clone the repository
+```
 git clone "Your-repository"
-
-# Install project dependencies
+```
+Install project dependencies
+```
 pip3 install -r requirements.txt
-
-# Start the server
-# Run the project using Streamlit by executing
+```
+Start the server
+```
+python3 -m streamlit run app.py
+```
+Run the project using Streamlit by executing
+```
 nohup python3 -m streamlit run app.py &
-
+```
 
