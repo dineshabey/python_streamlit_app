@@ -122,3 +122,29 @@ Start the server
 ```
 
 
+## How to Deploy Streamlit app on EC2 instance
+1. Login with your AWS console and launch an EC2 instance
+2. Run the following commands
+
+Note: Do the port mapping to this port:- 8501
+
+# Update the system
+sudo yum update
+
+# Install necessary tools and libraries
+sudo yum install git curl unzip tar make vim wget -y
+
+# Install Python 3 package manager
+sudo yum install python3-pip -y
+
+# Clone the repository
+git clone "Your-repository"
+
+# Install project dependencies
+pip3 install -r requirements.txt
+
+# Start the server
+# Run the project using Streamlit by executing
+nohup python3 -m streamlit run app.py &
+
+
